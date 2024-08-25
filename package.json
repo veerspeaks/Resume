@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify"
+    "build:css": "npx tailwindcss -i ./src/styles.css -o ./dist/styles.css --minify",
+    "build": "npx tailwindcss build src/styles.css -o public/assets/styles.css"
   },
   "keywords": [],
   "author": "",
