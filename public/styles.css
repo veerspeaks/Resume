@@ -1,4 +1,147 @@
 /* src/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  .parallax {
+    background-attachment: fixed;
+  }
+
+ 
+
+  @keyframes zoomOut {
+    from {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  .zoom-out {
+    animation: zoomOut 0.8s ease-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+
+  .slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+
+  /* src/styles.css */
+  .typing-effect {
+    font-family: 'Roboto', sans-serif; /* or any other font of your choice */
+    white-space: nowrap;
+    min-height: 140px;
+     /* Ensure inline display */
+  }
+  
+  /* Smooth fade-in effect for each letter */
+  .fade-in {
+    animation: fadeIn 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+   
+/* .mouse{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mouse > :nth-child(1){
+  width:100;
+  height:100;
+
+} */
+/* For Webkit browsers like Chrome, Safari, and Opera */
+
+
+/* For Webkit browsers like Chrome, Safari, and Opera */
+.box-content::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* For Internet Explorer, Edge */
+.box-content {
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+
+/* For Firefox */
+.box-content {
+  scrollbar-width: none;  /* Firefox */
+}
+
+.project{
+  border-radius: 25px;
+  width: 600px;
+}
+
+.projectCards-l{
+  border-right: 8px dotted #ffffff;
+  
+}
+
+.projectCards-r{
+  border-left: 8px solid #ffffff;
+  
+}
+
+.send{
+  
+  color: #04084d;
+}
+
+.social-logo {
+  
+  border-radius: 25px;
+  
+  
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.social-logo:hover {
+  transform: translateY(-5px); /* Uplift effect */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow to enhance the effect */
+}
+
+
+
+
+
 
 /* ! tailwindcss v3.4.9 | MIT License | https://tailwindcss.com */
 
